@@ -21,7 +21,7 @@ const Chat = () => {
       const user = JSON.parse(localStorage.getItem("user-deatils"));
       setCurrentUser(user);
       if (!user.isAvatarImageSet) {
-        nevigate("/setAvatar");
+        // nevigate("/setAvatar");
       }
       setLoading(false);
     }
