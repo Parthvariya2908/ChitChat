@@ -1,0 +1,9 @@
+export const host = "http://localhost:5000";
+export const registerRoute = `${host}/api/auth/register`;
+export const loginRoute = `${host}/api/auth/login`;
+export const setAvatarRoute = `${host}/api/auth/setavatar`;
+export const allFriendsRoute = `${host}/api/auth/allfriends`;
+export const sendMessageRoute = `${host}/api/messages/addmsg`;
+export const getALLMessageRoute = `${host}/api/messages/getmsg`;
+export const searchRoute = `${host}/api/auth/friend`;
+export const addfriendRoute = `${host}/api/auth/addfriend`;
