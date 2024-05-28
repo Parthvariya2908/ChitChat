@@ -60,9 +60,9 @@ const SetAvatar = () => {
       const data = [];
       for (let i = 0; i < 4; i++) {
         const image = await axios.get(
-          `${api}/${Math.floor(Math.random() * 1000)}`
+          `${api}/${Math.round(Math.random() * 1000)}`
         );
-        const buffer = new Buffer(image.data);
+        const buffer = Buffer.from(image.data);
         data.push(buffer.toString("base64"));
       }
       setAvatars(data);
