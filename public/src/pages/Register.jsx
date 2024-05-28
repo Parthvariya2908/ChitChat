@@ -45,7 +45,7 @@ const Register = () => {
             localStorage.setItem("user-deatils", JSON.stringify(data.user));
             console.log("iakfjdlfljsd");
             localStorage.setItem("token", data.token);
-            // nevigate("/setAvatar");
+            nevigate("/setAvatar");
           }
         });
     }
