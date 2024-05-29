@@ -8,7 +8,12 @@ const socket = require("socket.io");
 const app = express();
 
 require("dotenv").config(); // THIS IS FOR ENVIRONMENT VARIABLE --> user process.env.---
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://chit-chat-friends.vercel.app/", "https://localhost:3000"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(bodyparser.json());
 
