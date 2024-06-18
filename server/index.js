@@ -10,7 +10,7 @@ const app = express();
 require("dotenv").config(); // THIS IS FOR ENVIRONMENT VARIABLE --> user process.env.---
 app.use(
   cors({
-    origin: ["https://chit-chat-friends.vercel.app", "https://localhost:3000"],
+    origin: ["http://localhost:5173"],
     credentials: true,
   })
 );

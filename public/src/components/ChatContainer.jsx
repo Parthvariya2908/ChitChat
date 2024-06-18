@@ -44,6 +44,7 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
       }),
     });
     setrend(!rend);
+    setmessages([...allmsg, { fromSelf: true, message: msg }]);
     socket.current.emit("send-msg", {
       to: currentChat._id,
       from: currentUser._id,
@@ -59,6 +60,7 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
   }, []);
   useEffect(() => {
     arrivalMsg && setrend(!rend);
+    setArrivalMsg(null);
   }, [arrivalMsg]);
   return (
     <>
